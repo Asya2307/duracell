@@ -1,0 +1,78 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  overflow-x: hidden;
+}
+
+.body {
+  font-family: 'Gotham Pro';
+  font-size: 14px;
+  min-width: 320px;
+  width: 100%;
+  background-color: $mainColor;
+}
+
+* {
+  box-sizing: border-box;
+  outline-color: transparent;
+}
+
+a, button {
+  display: block;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone {
+  &--header {
+
+  }
+
+  &__link {
+    font-size: 20px;
+    color: #ffffff;
+    transition: $transition;
+
+    &:hover {
+      color: $prmColor;
+    }
+  }
+}
+
+.cart-search {
+  width: 100%;
+  height: 71px;
+border-radius: 10px;
+background-color: #8e8e8e;
+padding-left: 49px;
+position: relative;
+color: #ffffff;
+  &__button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 34px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/icon/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+  }
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+
+

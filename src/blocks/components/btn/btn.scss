@@ -1,0 +1,33 @@
+.btn {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    border: 2px solid #f4a600;
+    padding: 18px 56px;
+
+    &--dark {
+        box-shadow: 0 6px 27px rgba(0, 0, 0, 0.34);
+        background-color: #f4a600;
+        background-image: linear-gradient(to left, #f4a600 0%, #cc8b00 100%);
+        transition: $transition;
+
+        &:hover {
+            background-color: #fdb51c;
+            background-image: none;
+        }
+    }
+
+    &--add {
+        &:after {
+            content: '';
+            width: 22px;
+            height: 19px;
+            display: block;
+            background-image: url(../img/icon/school.png);
+            margin-left: 18px;
+        }
+    }
+}

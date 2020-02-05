@@ -1,0 +1,31 @@
+.navigation {
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: block;
+        margin-right: 100px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: #ffffff;
+        transition: $transition;
+
+        span {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: $prmColor;
+        }
+
+    }
+}
