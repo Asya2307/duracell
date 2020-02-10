@@ -36,17 +36,14 @@ $(window).on('load', function () {
         setProgress(0);
     }
 
-    const select = $('.select2');
+    const locationButton = $('.js-open-search');
 
-    if (select.length) {
-        select.select2({
-
+    if (locationButton.length) {
+        locationButton.on('click', function() {
+            $(this).toggleClass('active');
+            $(this).next('.select__wrap').toggleClass('active');
         })
     }
-
-    $('.js-open-search').on('click', function(){
-        $('.select2-container').addClass('.select2-container--open')
-    })
 });
 
 

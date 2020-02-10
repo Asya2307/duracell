@@ -24,6 +24,8 @@
 
     &__open {
         display: block;
+        position: relative;
+        z-index: 2;
         width: 16px;
         height: 9px;
         background-image: url(../img/icon/arrow.png);
@@ -33,5 +35,11 @@
         background-color: transparent;
         border: none;
         padding: 0;
+        transition: $transition;
+        transform-origin: center center;
+
+        &.active {
+            transform: rotate(-180deg);
+        }
     }
 }
