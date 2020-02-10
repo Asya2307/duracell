@@ -12,7 +12,6 @@ $(window).on('load', function () {
     
         var $slider = $('.location__slider-inner');
         var $progressBar = $('.location__slider-progress');
-        var $progressBarLabel = $('.location__slider-label');
 
         $slider.on('afterChange', function (slick, currentSlide, nextSlide) {
             $('.location__slider-current').text('0' + (nextSlide + 1));
@@ -36,6 +35,18 @@ $(window).on('load', function () {
     
         setProgress(0);
     }
+
+    const select = $('.select2');
+
+    if (select.length) {
+        select.select2({
+
+        })
+    }
+
+    $('.js-open-search').on('click', function(){
+        $('.select2-container').addClass('.select2-container--open')
+    })
 });
 
 

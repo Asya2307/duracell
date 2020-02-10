@@ -1,0 +1,212 @@
+.features {
+    position: relative;
+    background: linear-gradient(to right, #1d1f1f 60%, #292929 40%);
+
+    &__container {
+        max-width: 1509px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        padding-bottom: 110px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 46px;
+        font-weight: 700;
+        color: #ffffff;
+
+        &--prm {
+            color: $prmColor;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 56px;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 449px;
+            height: 590px;
+            position: absolute;
+            background-image: url(../img/main/pattern.png);
+            top: 30px;
+            right: 0;
+            transform: translateX(50%);
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        margin-right: 97px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: $darkColor;
+        overflow: hidden;
+        transition: $transition;
+        z-index: 1;
+
+        &.active {
+            transform: translateY(-10px);
+
+            .features__link-sing {
+                opacity: 0;
+            }
+
+        }
+    }
+
+    &__back {
+        position: absolute;
+        width: 100%;
+        left: -45px;
+        bottom: 0;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: -1;
+    }
+
+    &__img {
+        width: 100%;
+        height: 215px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 26px 30px;
+    }
+
+    &__desc {
+        color: #ffffff;
+        line-height: 20.94px;
+        height: 100px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 145px;
+        height: 28px;
+        border-radius: 14px;
+        background-color: transparent;
+        color: rgba($color: #ffffff, $alpha: 0.2);
+        text-decoration: none;
+        transition: $transition;
+
+        &-sing {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            transition: $transition;
+
+            &:before {
+                content: '';
+                display: block;
+                min-width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $prmColor;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: rgba($color: #ffffff, $alpha: 0.2);
+            }
+        }
+
+        &:hover {
+            color: rgba($color: #ffffff, $alpha: 1);
+            background-color: $prmColor;
+
+            &-sing {
+                opacity: 0;
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url(../img/main/noize.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        opacity: 0.1;
+    }
+
+    &__add {
+        position: relative;
+        margin-top: 70px;
+
+        &-wrap {
+            width: max-content;
+    margin: 0 auto;
+        }
+
+        &-desc {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            transform: translateX(-100%);
+            padding-right: 30px;
+            width: 228px;
+            height: 100%;
+            text-align: right;
+            color: rgba($color: #ffffff, $alpha: 0.3);
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+
+}

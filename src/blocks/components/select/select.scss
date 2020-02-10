@@ -1,0 +1,24 @@
+.select {
+    &__wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        .select2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 65px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            height: 65px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

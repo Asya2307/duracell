@@ -169,4 +169,59 @@
             transition: $transition;
         }
     }
+
+    &__info {
+        width: 100%;
+        max-width: 1530px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-top: 70px;
+
+        &-calc {
+            color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            font-size: 217px;
+            font-weight: 700;
+            margin-bottom: -24px;
+            line-height: 1;
+        }
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding: 50px 60px 50px 60px;
+            font-size: 35px;
+            line-height: 45px;
+            background-color: $prmColor;
+            box-shadow: 0 10px 95px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            &--dark {
+                color: #000000;
+            }
+
+            &--prm {
+                color: #ffffff;
+                font-weight: 700;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+
+        &-deplication {
+            font-size: 24px;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            line-height: 34px;
+        }
+    }
 }

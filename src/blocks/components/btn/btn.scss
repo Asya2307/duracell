@@ -30,4 +30,12 @@
             margin-left: 18px;
         }
     }
+
+    &--show {
+        transition: $transition;
+
+        &:hover {
+            background-color: $prmColor;
+        }
+    }
 }
